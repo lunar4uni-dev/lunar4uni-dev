@@ -1,17 +1,13 @@
 <h1 align="center">I'm Seungwoo</h1>
-<h3 align="center">EE & CS student loving literatures</h3>
-<div align="center">📚 Writer. Expressing my thoughts.</div>
-<div align="center">💻 Developer. Sharing my studies.</div>
-<div align="center">🎧 One. Immature to cure others.</div>
+<h3 align="center">EE & CS student in Seoul</h3>
 
 ---
-
 📫 lunar4uni@gmail.com
 🌐 [Instagram](https://instagram.com/tnnnsan)
 📝 [Blog](https://blog.naver.com/tnnnsan2006)
 🎞️ [Youtube](https://www.youtube.com/@Mimong-comet)
 
----
+
 
 <h3 align="left">Mainly handle Python</h3>
 <p align="left"> 
