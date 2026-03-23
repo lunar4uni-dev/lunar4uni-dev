@@ -46,7 +46,7 @@
 <a href="https://code.visualstudio.com/docs/languages/cpp" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> 
 <a href="https://code.visualstudio.com/docs/languages/cpp" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> 
 <a href="https://code.visualstudio.com/docs/languages/csharp" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> 
-<span style="background-color: #1f2937; display: inline-flex; align-items: center; justify-content: center; padding: 6px; border-radius: 8px;"><img src="https://cdn.simpleicons.org/unity/ffffff" width="40" height="40"/></span>
+<img src="https://cdn.simpleicons.org/unity/D1D5DB" width="40"/>
 <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> 
 <a href="https://www.raspberrypi.com/"><img src="https://cdn.simpleicons.org/raspberrypi/A22846" width="40"/></a>
 <a href="https://nodejs.org/"><img src="https://cdn.simpleicons.org/nodedotjs/339933" width="40"/></a>
