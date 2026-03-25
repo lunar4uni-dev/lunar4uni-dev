@@ -1,60 +1,87 @@
 <h1 align="center">I'm Seungwoo</h1>
-<h3 align="center">EE & CS student in Seoul</h3>
+<p align="center">I build intelligent systems with Python, connecting AI to real-world applications.</p>
 
----
-
-<a href="mailto:lunar4uni@gmail.com" alt="gmail">
-<img alt="Static Badge" src="https://img.shields.io/badge/Gmail-lunar4uni-%23EA4335">
-</a>
-<a href="https://instagram.com/tnnnsan" alt="instagram">
-<img alt="Static Badge" src="https://img.shields.io/badge/Instagram-%40tnnnsan-%23FF0069">
-</a>
-<a href="https://www.youtube.com/@Mimong-comet" alt="youtube">
-<img alt="Static Badge" src="https://img.shields.io/badge/Youtube-%40Mimong--comet-%23FF0000">
-</a>
-<a href="https://blog.naver.com/tnnnsan2006" alt="blog">
-<img alt="Static Badge" src="https://img.shields.io/badge/Blog-Uni's_Atelier-%2303A94D">
-</a>
-
-<h3 align="left">I primarily use Python.</h3>
-<p align="left"> 
-<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-<a href="https://www.anaconda.com/"><img src="https://cdn.simpleicons.org/anaconda/44A833" width="40"/></a>
-<a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a>
-<a href="https://numpy.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/> </a>
-<a href="https://matplotlib.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="matplotlib" width="40" height="40"/> </a>
-<a href="https://keras.io/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="keras" width="40" height="40"/> </a>
-<a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> 
-<a href="https://www.gradio.app/" target="_blank" rel="noreferrer"> <img src="https://cdn.simpleicons.org/gradio/FF7C00" alt="gradio" width="40" height="40"/> </a>
-<a href="https://www.langchain.com/"><img src="https://cdn.simpleicons.org/langchain/7FC8FF" width="40"/></a>
+<p align="center">
+    <a href="mailto:lunar4uni@gmail.com" alt="gmail">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Gmail-%23EA4335?style=flat&logo=gmail&logoColor=white"></a>
+    <a href="https://instagram.com/tnnnsan" alt="instagram">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Instagram-%23E4405F?style=flat&logo=instagram&logoColor=white"></a>
+    <a href="https://www.youtube.com/@Mimong-comet" alt="youtube">
+    <img alt="Static Badge" src="https://img.shields.io/badge/YouTube-%23FF0000?style=flat&logo=youtube&logoColor=white"></a>
+    <a href="https://blog.naver.com/tnnnsan2006" alt="blog">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Blog-%2303A94D?style=flat&logo=naver&logoColor=white"></a>
 </p>
 
-<h3 align="left">I develop web applications.</h3>
-<p align="left"> 
-<a href="https://html.spec.whatwg.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a>
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-<a href="https://react.dev/"><img src="https://cdn.simpleicons.org/react/61DAFB" width="40"/></a>
-<a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a>
-<a href="https://fastapi.tiangolo.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/fastapi/009688" width="40"/></a>
+<br/>
+
+<h3 align="center">Core Stack</h3>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python/3776AB" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/react/61DAFB" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/fastapi/009688" width="40" style="margin: 6px; vertical-align: middle;"/>
 </p>
 
-<h3 align="left">I continuously study to improve myself.</h3>
-<p align="left">
-<a href="https://code.visualstudio.com/docs/languages/cpp" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> 
-<a href="https://code.visualstudio.com/docs/languages/cpp" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> 
-<a href="https://code.visualstudio.com/docs/languages/csharp" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> 
-<img src="https://cdn.simpleicons.org/unity/D1D5DB" width="40"/>
-<a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> 
-<a href="https://www.raspberrypi.com/"><img src="https://cdn.simpleicons.org/raspberrypi/A22846" width="40"/></a>
-<a href="https://nodejs.org/"><img src="https://cdn.simpleicons.org/nodedotjs/339933" width="40"/></a>
-<a href="https://www.docker.com/"><img src="https://cdn.simpleicons.org/docker/2496ED" width="40"/></a>
+<br/>
+
+<h3 align="center">Data Science & AI</h3>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/numpy/013243" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/pandas/150458" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/keras/D00000" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/opencv/5C3EE8" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/gradio/FF7C00" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/langchain/10B981" width="40" style="margin: 6px; vertical-align: middle;"/>
+  
+
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=lunar4uni-dev&show_icons=true&locale=en&layout=compact" alt="lunar4uni-dev" /></p>
+<br/>
 
-<p> <img align="center" src="https://github-readme-stats.vercel.app/api?username=lunar4uni-dev&show_icons=true&locale=en" alt="lunar4uni-dev" /></p>
+<h3 align="center">Web Development</h3>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=lunar4uni-dev&" alt="lunar4uni-dev" /></p>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/html5/E34F26" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/css/1572B6" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/typescript/3178C6" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/django/092E20" width="40" style="margin: 6px; vertical-align: middle;"/>
+</p>
+
+<br/>
+
+<h3 align="center">Systems / Robotics / Simulation</h3>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/c/A8B9CC" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/cplusplus/00599C" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/raspberrypi/A22846" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/arduino/00979D" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/unity/D1D5DB" width="40" style="margin: 6px; vertical-align: middle;"/>
+
+</p>
+
+<br/>
+
+<h3 align="center">Currently Studying</h3>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/pytorch/EE4C2C" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/tensorflow/FF6F00" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/docker/2496ED" width="40" style="margin: 6px; vertical-align: middle;"/>
+  <img src="https://cdn.simpleicons.org/kotlin/7F52FF" width="40" style="margin: 6px; vertical-align: middle;"/>
+</p>
+
+<p align="center">
+  <sub>Continuously learning to expand my experiences.</sub>
+</p>
+
+<br/>
+
+
+<p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=lunar4uni-dev&show_icons=true&locale=en&layout=compact" alt="lunar4uni-dev" /></p>
+
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=lunar4uni-dev&show_icons=true&locale=en" alt="lunar4uni-dev" /></p>
+
+<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=lunar4uni-dev&" alt="lunar4uni-dev" /></p>
