@@ -4,7 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
-<title>Seungwoo Moon — AI Pipeline Engineering Portfolio</title>
+
+<!-- Open Graph / LinkedIn Preview -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lunar4uni-dev.github.io/lunar4uni-dev/portfolio.html">
+<meta property="og:title" content="Seungwoo Moon — Backend/AI Engineering Portfolio">
+<meta property="og:description" content="구조는 제가 설계하고, AI는 그 안에서만 실행합니다. AI 콘텐츠, 인트로 영상, 다국어 QA 파이프라인 수립 및 검증 포트폴리오.">
+<meta property="og:image" content="./assets/AI-RnD.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seungwoo Moon — Backend/AI Engineering Portfolio">
+<meta name="twitter:description" content="구조는 제가 설계하고, AI는 그 안에서만 실행합니다. Backend/AI Engineering Portfolio.">
+<meta name="twitter:image" content="./assets/AI-RnD.png">
+
+<title>Seungwoo Moon — Backend/AI Engineering Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -247,6 +261,8 @@
     display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:8px;
   }
   @media (max-width:760px){
+    .project.reveal{opacity:1; transform:none; transition:none;}
+    .project.reveal.in{opacity:1; transform:none;}
     .highlights{grid-template-columns:1fr;}
     .project-head{
       align-items:flex-start;
@@ -289,6 +305,11 @@
     content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--qa);
   }
   .case.crosslink .case-label{color:var(--qa);}
+  .case.proof{border-color:var(--blog-soft); position:relative; overflow:hidden;}
+  .case.proof::before{
+    content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--blog);
+  }
+  .case.proof .case-label{color:var(--blog);}
   .xlink{
     display:inline-flex; align-items:center; gap:7px; margin-top:16px;
     font-family:var(--mono); font-size:11.5px; padding:7px 13px; border-radius:20px;
@@ -297,6 +318,14 @@
   }
   .xlink:hover{background:var(--qa-soft);}
   .xlink::before{content:'↔';}
+  .proof-link{
+    display:inline-flex; align-items:center; gap:7px; margin-top:16px;
+    font-family:var(--mono); font-size:11.5px; padding:7px 13px; border-radius:20px;
+    border:1px dashed var(--blog); color:var(--blog); text-decoration:none;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .proof-link:hover{background:var(--blog-soft); transform:translateY(-1px);}
+  .proof-link::before{content:'↗';}
 
   .research-flow{display:flex; flex-direction:column; gap:16px; margin-top:16px;}
   .research-step{display:flex; gap:14px; align-items:flex-start;}
@@ -356,7 +385,7 @@
     <ul class="nav-links">
       <li><a href="#blog">AI 블로그 콘텐츠 파이프라인</a></li>
       <li><a href="#motion">AI 인트로 영상 파이프라인</a></li>
-      <li><a href="#skillcertify">SkillCertify JA QA</a></li>
+      <li><a href="#skillcertify">개발자 역량 검증 플랫폼 JA QA</a></li>
     </ul>
   </div>
 </header>
@@ -382,7 +411,7 @@
           <div class="term-out" id="termOut">
             <div class="row"><span class="k">blog-content-pipeline</span><span class="v">186/282 commits · 2026.05–07</span></div>
             <div class="row"><span class="k">intro-video-pipeline</span><span class="v">231/245 commits · 2026.04–07</span></div>
-            <div class="row"><span class="k">skillcertify-ja-qa</span><span class="v">341 tasks · 10 tracks · 단독 검수</span></div>
+            <div class="row"><span class="k">dev-eval-ja-qa</span><span class="v">341 tasks · 10 tracks · 단독 검수</span></div>
           </div>
         </div>
       </div>
@@ -398,7 +427,7 @@
         </div>
         <div class="stat">
           <div class="num">341<small>건</small></div>
-          <div class="lbl">SkillCertify 일본어 런칭, 10개 트랙 단독 검수 task 수</div>
+          <div class="lbl">개발자 역량 검증 플랫폼 일본어 런칭, 10개 트랙 단독 검수 task 수</div>
         </div>
       </div>
     </div>
@@ -465,6 +494,14 @@
           <div class="hl-title">손으로 설계한 구조 덕분에 보인 불필요한 순차 의존성</div>
           <div class="hl-body">이 프로젝트도 디렉터리·파일 구조를 전부 손으로 먼저 설계해, 프로젝트가 커진 뒤에도 데이터 흐름이 머릿속 지도로 남아 있었습니다. 동료가 추가한 LinkedIn 포스트 생성 기능이 기존 파이프라인(설계→작성→다듬기→삽화) 맨 끝에 붙어 있는 걸 보고, LinkedIn 글쓰기는 본문 다듬기 완료를 기다릴 필요가 없는 <b>독립적인 작업</b>이라는 걸 파악해 삽화 생성 이전 단계에서 비동기로 먼저 시작하도록 재배치, 전체 소요 시간을 단축했습니다.</div>
         </div>
+      </div>
+
+      <div class="case proof">
+        <div class="case-label">Production Adoption · 마케팅팀의 표준 워크플로우로 정착</div>
+        <p style="font-size:13.5px; color:var(--text-dim); line-height:1.7; margin-top:10px;">
+          이 파이프라인은 사내 실험용 도구로 끝나지 않았습니다. 마케팅팀이 이를 <b>표준 콘텐츠 제작 워크플로우</b>로 채택했고, 6월부터의 콘텐츠들은 실제로 해당 도구로 제작되어 <a href="https://blog.codepresso.io/" target="_blank" rel="noreferrer" style="color:var(--text); text-decoration:underline; text-underline-offset:3px;">Codepresso 블로그</a>에 게시되고 있습니다. SEO 글, 삽화, 본문 구조, 배포 전 검수 흐름이 모두 이 도구에 묶인 상태로 운영됩니다.
+        </p>
+        <a class="proof-link" href="https://blog.codepresso.io/" target="_blank" rel="noreferrer">Codepresso 블로그 게시물 보기</a>
       </div>
 
       <div class="stack">
@@ -565,7 +602,7 @@
           </div>
           <div class="research-step">
             <span class="step-tag">03 · 방법론 차용</span>
-            <p>이 문제를 풀 때, 한국어·일본어 콘텐츠를 검수하며 사내 번역 모듈(영→한, 한→일) 성능을 개선했던 경험에서 배운 방식을 그대로 가져왔습니다: 콘텐츠를 직접 읽으며 자연스러운 번역에 자주 실패하는 단어를 손으로 뽑아 <b>glossary json</b>을 만들고, LLM이 번역·발음 판단을 할 때 이 사전을 우선 참고하도록 만드는 방식입니다. 이 방식으로 <b>SkillFit 한국어</b>와 <b>SkillCertify 일본어</b> 콘텐츠의 퀄리티를 실제로 끌어올린 경험이 있었고, 그 경험을 발음 문제에도 그대로 재적용했습니다.</p>
+            <p>이 문제를 풀 때, 한국어·일본어 콘텐츠를 검수하며 사내 번역 모듈(영→한, 한→일) 성능을 개선했던 경험에서 배운 방식을 그대로 가져왔습니다: 콘텐츠를 직접 읽으며 자연스러운 번역에 자주 실패하는 단어를 손으로 뽑아 <b>glossary json</b>을 만들고, LLM이 번역·발음 판단을 할 때 이 사전을 우선 참고하도록 만드는 방식입니다. 이 방식으로 <b>SkillFit 한국어</b>와 <b>개발자 역량 검증 플랫폼 일본어</b> 콘텐츠의 퀄리티를 실제로 끌어올린 경험이 있었고, 그 경험을 발음 문제에도 그대로 재적용했습니다.</p>
           </div>
           <div class="research-step">
             <span class="step-tag">04 · 발음 사전 직접 구축</span>
@@ -577,7 +614,7 @@
             <p>남은 숫자 문제는 <b>Python 정규식 전처리</b>를 먼저 적용한 뒤, 그래도 LLM이 특히 헷갈려 하는 한국어 음운 규칙 — 비음화·유음화·구개음화·음절의 끝소리 규칙·된소리되기·니은첨가·사잇소리현상·거센소리되기 — 을 <b>국립국어원 자료를 인용해 요약 문서화</b>해서 함께 제공하는 방식으로 보강했습니다. 발음 문제를 사전 하나로 끝내지 않고, 사전(어휘 수준) + 정규식(패턴 수준) + 언어학 규칙 문서(원리 수준)를 층층이 쌓은 구조입니다.</p>
           </div>
         </div>
-        <a class="xlink" href="#skillcertify">SkillCertify JA QA — glossary 방법론의 출처가 된 프로젝트</a>
+        <a class="xlink" href="#skillcertify">개발자 역량 검증 플랫폼 JA QA — glossary 방법론의 출처가 된 프로젝트</a>
       </div>
 
       <table class="bugtable">
@@ -602,8 +639,8 @@
           </div>
           <div class="case-item" style="grid-column:1 / -1;">
             <h4>외주 제작 비용을 없앤 자립형 사내 영상 제작 툴</h4>
-            <p>이 프로젝트가 시작되기 전, SkillFit을 비롯한 회사의 여러 서비스가 소개·프로모션 영상이 필요할 때마다 매번 <b>외주 제작사를 섭외해 견적을 받고, 시안을 컨펌하고, 수정 요청을 주고받는</b> 과정을 반복해야 했습니다. 영상 한 편에 적지 않은 비용과 리드타임이 들었고, 사소한 문구 하나를 바꾸는 데도 외주사와의 커뮤니케이션 사이클을 다시 돌아야 하는 구조였습니다.</p>
-            <p style="margin-top:12px;">AI 인트로 영상 파이프라인을 개발자 전용 파이프라인 스크립트에서 멈추지 않고, <b>비개발자도 바로 쓸 수 있는 셀프서비스 웹 UI</b>(스킬 파일·테마·보이스·영상 길이만 고르면 나머지는 자동으로 처리되는 간소화 페이지)까지 다듬은 이유가 여기에 있습니다. 스킬 JSON이나 마크다운 한 장만 있으면 대본 작성부터 TTS 내레이션, 애니메이션, 최종 영상 파일까지 전부 자동으로 만들어지기 때문에, 이제는 <b>외주 제작사를 거치지 않고도 사내에서 영상을 자체적으로 완성</b>할 수 있습니다. 결과적으로 지금은 <b>운영팀이 SkillFit을 포함한 여러 서비스의 소개 영상을 이 도구로 직접 제작</b>하고 있습니다 — 엔지니어의 개입 없이도 기획부터 결과물 다운로드까지 운영팀이 스스로 완결할 수 있는 워크플로우가 사내에 자리잡은 것이 이 프로젝트가 만들어낸 가장 실질적인 변화입니다.</p>
+            <p>이 프로젝트가 시작되기 전, SkillFit과 다른 회사 서비스가 소개·프로모션 영상이 필요할 때마다 매번 <b>외주 제작사를 섭외해 견적을 받고, 시안을 컨펌하고, 수정 요청을 주고받는</b> 과정을 반복해야 했습니다. 영상 한 편에 적지 않은 비용과 리드타임이 들었고, 사소한 문구 하나를 바꾸는 데도 외주사와의 커뮤니케이션 사이클을 다시 돌아야 하는 구조였습니다.</p>
+            <p style="margin-top:12px;">AI 인트로 영상 파이프라인을 개발자 전용 파이프라인 스크립트에서 멈추지 않고, <b>비개발자도 바로 쓸 수 있는 셀프서비스 웹 UI</b>(스킬 파일·테마·보이스·영상 길이만 고르면 나머지는 자동으로 처리되는 간소화 페이지)까지 다듬은 이유가 여기에 있습니다. 스킬 JSON이나 마크다운 한 장만 있으면 대본 작성부터 TTS 내레이션, 애니메이션, 최종 영상 파일까지 전부 자동으로 만들어지기 때문에, 이제는 <b>외주 제작사를 거치지 않고도 사내에서 영상을 자체적으로 완성</b>할 수 있습니다. 결과적으로 지금은 <b>운영팀이 SkillFit과 다른 여러 서비스의 소개 영상을 이 도구로 직접 제작</b>하고 있습니다 — 엔지니어의 개입 없이도 기획부터 결과물 다운로드까지 운영팀이 스스로 완결할 수 있는 워크플로우가 사내에 자리잡은 것이 이 프로젝트가 만들어낸 가장 실질적인 변화입니다.</p>
           </div>
         </div>
       </div>
@@ -645,8 +682,8 @@
       <div class="project-head">
         <div>
           <div class="project-tag"><span class="dot" style="background:var(--qa)"></span>PROJECT 03 · 2026.04 – 2026.07</div>
-          <div class="project-title">SkillCertify — 일본어(JA) 런칭 QA</div>
-          <div class="project-sub">개발자 스킬 검증 서비스 SkillCertify의 일본어 신규 런칭을 위해 10개 트랙 · 341개 학습 콘텐츠의 번역 품질을 단독으로 책임지고, 동시에 검수 자동화 도구를 직접 설계·구현했습니다.</div>
+          <div class="project-title">개발자 역량 검증 플랫폼 — 일본어 런칭 QA</div>
+          <div class="project-sub">개발자 역량 검증 플랫폼의 일본어 신규 런칭을 위해 10개 트랙 · 341개 학습 콘텐츠의 번역 품질을 단독으로 책임지고, 동시에 검수 자동화 도구를 직접 설계·구현했습니다.</div>
         </div>
         <div class="project-meta">
           <div class="role">
@@ -714,7 +751,7 @@
         <div class="case-grid">
           <div class="case-item">
             <h4>Codepresso 전체 IT 교육 콘텐츠로 확장된 검수 운영</h4>
-            <p>SkillCertify 외에도 Codepresso IT 교육 콘텐츠 <b>20개 이상 트랙</b>의 KO→JA 외주 검수 체계를 구축·운영했습니다. 06-11 배치 78건 수정을 5개 오류 유형(어미 미통일 28% · 쉼표 누락 26% · 부자연스러운 표현 23% 등)으로 분류해 Glossary·프롬프트 개선의 근거로 정리했습니다.</p>
+            <p>개발자 역량 검증 플랫폼 외에도 Codepresso IT 교육 콘텐츠 <b>20개 이상 트랙</b>의 KO→JA 외주 검수 체계를 구축·운영했습니다. 06-11 배치 78건 수정을 5개 오류 유형(어미 미통일 28% · 쉼표 누락 26% · 부자연스러운 표현 23% 등)으로 분류해 Glossary·프롬프트 개선의 근거로 정리했습니다.</p>
           </div>
           <div class="case-item">
             <h4>실제 로그인 세션을 그대로 쓰는 접근</h4>
@@ -734,7 +771,7 @@
     <div class="throughline">
       <p>세 프로젝트를 관통하는 한 가지: <b>자동화를 만드는 것보다, 그 자동화가 언제 사람의 판단이 필요한지를 설계에 먼저 넣는 것</b>을 우선했습니다.
       AI 블로그 콘텐츠 파이프라인에서는 동시성 리스크를 리포트로 먼저 진단한 뒤 고쳤고, AI 인트로 영상 파이프라인에서는 자기 실험의 데이터 오염을 스스로 발견해 공개했으며,
-      SkillCertify에서는 자동화 도구가 신뢰도를 해친다고 판단되자 곧바로 수동 검수로 되돌렸습니다. 세 번 모두 같은 원칙이었습니다.</p>
+      개발자 역량 검증 플랫폼에서는 자동화 도구가 신뢰도를 해친다고 판단되자 곧바로 수동 검수로 되돌렸습니다. 세 번 모두 같은 원칙이었습니다.</p>
     </div>
   </div>
 </main>
@@ -743,7 +780,7 @@
   <div class="wrap">
     <div class="foot-name">Seungwoo Moon</div>
     <div class="foot-role">AI R&amp;D · Codepresso</div>
-    <div class="foot-note">이 페이지는 AI 블로그 콘텐츠 파이프라인, AI 인트로 영상 파이프라인, SkillCertify JA Launch QA 세 프로젝트의 실제 작업 기록(커밋 이력·리포트·프로젝트 문서)을 바탕으로 정리했습니다.</div>
+    <div class="foot-note">이 페이지는 AI 블로그 콘텐츠 파이프라인, AI 인트로 영상 파이프라인, 개발자 역량 검증 플랫폼 JA 런칭 QA 세 프로젝트의 실제 작업 기록(커밋 이력·리포트·프로젝트 문서)을 바탕으로 정리했습니다.</div>
   </div>
 </footer>
 
